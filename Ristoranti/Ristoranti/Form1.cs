@@ -18,6 +18,7 @@ namespace Ristoranti
         }
 
         int num = 0;
-
+        Tavolo[] eletavoli = new Tavolo[100];
+        Piatto[] menu = new Piatto[100];
     }
 }
