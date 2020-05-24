@@ -32,6 +32,28 @@ namespace Ristoranti
         int num = 0;
         Piatto[] menu = new Piatto[100];
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbTI.Text))
+            {
+                MessageBox.Show("Inserire un tavolo");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(tbQI.Text))
+            {
+                MessageBox.Show("Inserire una quantità");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(cbNI.Text))
+            {
+                MessageBox.Show("Inserire un piatto");
+                return;
+            }
+
+
+        }
     }
 
 }
