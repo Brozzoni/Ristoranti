@@ -6,26 +6,20 @@ using System.Threading.Tasks;
 
 namespace Ristoranti
 {
-    public struct Tavolo
-    {
-        public string numero;
-        public int posti;
-        public string[] piatti;
-        public decimal totale;
-    }
-
     public struct Piatto
     {
         public string nome;
         public decimal prez;
+        public int qta;
         public string tipo;
+        public int tavolo;
+        public bool stato;
     }
 
     
 
     class Class1
     {
-        string[] piatti = new string[100];
-
+        
     }
 }

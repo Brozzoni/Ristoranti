@@ -15,10 +15,23 @@ namespace Ristoranti
         public Form1()
         {
             InitializeComponent();
+
+            menu[num].nome = "Penne al sugo";
+            menu[num].prez = 13.50M;
+            num++;
+
+            menu[num].nome = "Tartar di tonno";
+            menu[num].prez = 12.00M;
+            num++;
+
+            menu[num].nome = "Pizza";
+            menu[num].prez = 12.00M;
+            num++;
         }
 
         int num = 0;
-        Tavolo[] eletavoli = new Tavolo[100];
         Piatto[] menu = new Piatto[100];
+
     }
+
 }
