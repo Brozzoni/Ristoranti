@@ -64,6 +64,10 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -212,25 +216,31 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(45, 157);
+            this.textBox5.Location = new System.Drawing.Point(117, 176);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(117, 22);
             this.textBox5.TabIndex = 5;
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(623, 40);
+            this.listView1.Location = new System.Drawing.Point(683, 74);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(391, 434);
+            this.listView1.Size = new System.Drawing.Size(267, 377);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 137);
+            this.label3.Location = new System.Drawing.Point(114, 147);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 17);
@@ -239,10 +249,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(45, 336);
+            this.button2.Location = new System.Drawing.Point(287, 317);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(156, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = "visual";
             this.button2.UseVisualStyleBackColor = true;
@@ -250,7 +260,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(45, 112);
+            this.radioButton2.Location = new System.Drawing.Point(105, 112);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(129, 21);
@@ -261,7 +271,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(45, 83);
+            this.radioButton1.Location = new System.Drawing.Point(105, 74);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(98, 21);
@@ -472,6 +482,23 @@
             this.button8.Text = "FATTRto";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nome";
+            this.columnHeader1.Width = 80;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Prezzo";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tavolo";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tipo";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -534,6 +561,10 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
 
