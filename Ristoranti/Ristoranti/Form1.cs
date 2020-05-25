@@ -60,7 +60,6 @@ namespace Ristoranti
         }
 
         int num = 0;
-        int b = 0;
         Piatto[] menu = new Piatto[15];
         Piatto[] ordini = new Piatto[100];
 
@@ -105,19 +104,21 @@ namespace Ristoranti
         private void btnCercaAgg_Click(object sender, EventArgs e)
         {
             listBox2.Items.Clear();
+            listBox3.Items.Clear();
 
-            for (b = 0; b < num; b++)
+            for (int b = 0; b < num; b++)
             {
                 if (ordini[b].tavolo == int.Parse(txtTavoloAgg.Text))
                 {
-                    listBox2.Items.Add($"{ordini[b].nome} {ordini[b].qta}");
+                    listBox2.Items.Add($"{ordini[b].nome}");
+                    listBox3.Items.Add($"{ordini[b].qta}");
                 }
             }
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         { 
-            domainUpDown1.Text = listBox2.SelectedItem.ToString();
+            domainUpDown1.Text = listBox3.SelectedItem.ToString();
         }
 
         private void btnEliminOrdin_Click(object sender, EventArgs e)
@@ -137,11 +138,28 @@ namespace Ristoranti
 
                 x++;
             }
+
+            btnCercaAgg.PerformClick();
         }
 
         private void btnAggiorna_Click(object sender, EventArgs e)
         {
+            int x = 0;
 
+            if (ordini[x].tavolo == int.Parse(txtTavoloAgg.Text))
+            {
+                ordini[x].qta = int.Parse(domainUpDown1.Text);
+            }
+            
+
+            txtTavoloAgg.Clear();
+            listBox2.Items.Clear();
+            listBox2.Items.Clear();
+        }
+
+        private void listBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            domainUpDown1.Text = listBox3.SelectedItem.ToString();
         }
     }
 }
