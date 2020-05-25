@@ -143,5 +143,22 @@ namespace Ristoranti
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == false && radioButton2.Checked==false)
+            {
+                MessageBox.Show("Scegli un ordinamento");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(textBox5.Text))
+            {
+                MessageBox.Show("Inserisci un tavolo");
+                return;
+            }
+
+
+        }
     }
 }
