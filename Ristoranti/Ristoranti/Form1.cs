@@ -16,21 +16,70 @@ namespace Ristoranti
         {
             InitializeComponent();
 
-            menu[num].nome = "Penne al sugo";
-            menu[num].prez = 13.50M;
+            menu[0].nome = "Penne al sugo";
+            menu[0].prez = 13.50M;
             num++;
 
-            menu[num].nome = "Tartar di tonno";
-            menu[num].prez = 12.00M;
+            menu[1].nome = "Vino";
+            menu[1].prez = 12.00M;
             num++;
 
-            menu[num].nome = "Pizza";
-            menu[num].prez = 12.00M;
+            menu[2].nome = "Pizza";
+            menu[2].prez = 12.00M;
+            num++;
+
+            menu[3].nome = "Cotoletta";
+            menu[3].prez = 12.00M;
+            num++;
+
+            menu[4].nome = "Patatine";
+            menu[4].prez = 12.00M;
+            num++;
+
+            menu[5].nome = "Acqua";
+            menu[5].prez = 1.00M;
+            num++;
+
+            menu[6].nome = "Coca-Cola";
+            menu[6].prez = 2.00M;
+            num++;
+
+            menu[7].nome = "Gelato";
+            menu[7].prez = 12.00M;
+            num++;
+
+            menu[8].nome = "Bistecca";
+            menu[8].prez = 12.00M;
+            num++;
+
+            menu[9].nome = "Tagliata";
+            menu[9].prez = 12.00M;
+            num++;
+
+            menu[10].nome = "Risotto";
+            menu[10].prez = 12.00M;
+            num++;
+
+            menu[11].nome = "Grigliata";
+            menu[11].prez = 12.00M;
+            num++;
+
+            menu[12].nome = "Fritto misto";
+            menu[12].prez = 12.00M;
+            num++;
+
+            menu[13].nome = "Branzino";
+            menu[13].prez = 12.00M;
+            num++;
+
+            menu[14].nome = "Cheesecake";
+            menu[14].prez = 12.00M;
             num++;
         }
 
-        int num = 0;
-        Piatto[] menu = new Piatto[100];
+        int num = 0;        
+        Piatto[] menu = new Piatto[15];
+        Piatto[] ordini = new Piatto[100];
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,13 +95,25 @@ namespace Ristoranti
                 return;
             }
 
-            if (string.IsNullOrEmpty(cbNI.Text))
+            int x = 0;
+
+            while (x < 15)
             {
-                MessageBox.Show("Inserire un piatto");
-                return;
+                if (textBox4.Text == menu[x].nome)
+                {
+                    ordini[num].nome = menu[x].nome;
+                    ordini[num].prez = menu[x].prez;
+                }
+                x++;
             }
 
+            ordini[num].qta = int.Parse(tbQI.Text);
+            ordini[num].tavolo = int.Parse(tbTI.Text);    
+        }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox4.Text = listBox1.Text;
         }
     }
 
