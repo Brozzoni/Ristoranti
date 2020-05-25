@@ -20,6 +20,6 @@ namespace Ristoranti
 
     class Class1
     {
-        
+       
     }
 }
