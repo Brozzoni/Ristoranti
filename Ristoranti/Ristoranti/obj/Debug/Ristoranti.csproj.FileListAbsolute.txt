@@ -8,3 +8,13 @@ C:\Users\Gabry & Tommy\Desktop\Cartella Git\Ristoranti\Ristoranti\Ristoranti\obj
 C:\Users\Gabry & Tommy\Desktop\Cartella Git\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.CoreCompileInputs.cache
 C:\Users\Gabry & Tommy\Desktop\Cartella Git\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.exe
 C:\Users\Gabry & Tommy\Desktop\Cartella Git\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.pdb
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\bin\Debug\Ristoranti.exe.config
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\bin\Debug\Ristoranti.exe
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\bin\Debug\Ristoranti.pdb
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csprojAssemblyReference.cache
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.Form1.resources
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.Properties.Resources.resources
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.GenerateResource.cache
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.CoreCompileInputs.cache
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.exe
+F:\GithunRep\Ristoranti\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.pdb
