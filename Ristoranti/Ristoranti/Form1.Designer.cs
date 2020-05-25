@@ -41,6 +41,10 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -64,10 +68,6 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -237,6 +237,23 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nome";
+            this.columnHeader1.Width = 80;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Prezzo";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tavolo";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tipo";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -254,7 +271,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 49);
             this.button2.TabIndex = 2;
-            this.button2.Text = "visual";
+            this.button2.Text = "visualizza";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -481,23 +498,6 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "FATTRto";
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nome";
-            this.columnHeader1.Width = 80;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Prezzo";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tavolo";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Tipo";
             // 
             // Form1
             // 
