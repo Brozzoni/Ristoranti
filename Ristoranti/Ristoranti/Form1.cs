@@ -107,6 +107,12 @@ namespace Ristoranti
                 x++;
             }
         }
+
+        private void btnAggiorna_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 
 }

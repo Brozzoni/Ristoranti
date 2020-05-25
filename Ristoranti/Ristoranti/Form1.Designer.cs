@@ -41,13 +41,11 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.txtTavoloAgg = new System.Windows.Forms.TextBox();
-            this.txtQtaAgg = new System.Windows.Forms.TextBox();
-            this.txtPiattoAgg = new System.Windows.Forms.TextBox();
             this.btnEliminOrdin = new System.Windows.Forms.Button();
             this.btnAggiorna = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCercaAgg = new System.Windows.Forms.Button();
@@ -197,13 +195,11 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.domainUpDown1);
             this.tabPage3.Controls.Add(this.txtTavoloAgg);
-            this.tabPage3.Controls.Add(this.txtQtaAgg);
-            this.tabPage3.Controls.Add(this.txtPiattoAgg);
             this.tabPage3.Controls.Add(this.btnEliminOrdin);
             this.tabPage3.Controls.Add(this.btnAggiorna);
             this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.listBox2);
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.btnCercaAgg);
@@ -215,6 +211,35 @@
             this.tabPage3.Text = "Aggiorna";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Items.Add("1");
+            this.domainUpDown1.Items.Add("2");
+            this.domainUpDown1.Items.Add("3");
+            this.domainUpDown1.Items.Add("4");
+            this.domainUpDown1.Items.Add("5");
+            this.domainUpDown1.Items.Add("6");
+            this.domainUpDown1.Items.Add("7");
+            this.domainUpDown1.Items.Add("8");
+            this.domainUpDown1.Items.Add("9");
+            this.domainUpDown1.Items.Add("10");
+            this.domainUpDown1.Items.Add("11");
+            this.domainUpDown1.Items.Add("12");
+            this.domainUpDown1.Items.Add("13");
+            this.domainUpDown1.Items.Add("14");
+            this.domainUpDown1.Items.Add("15");
+            this.domainUpDown1.Items.Add("16");
+            this.domainUpDown1.Items.Add("17");
+            this.domainUpDown1.Items.Add("18");
+            this.domainUpDown1.Items.Add("19");
+            this.domainUpDown1.Items.Add("20");
+            this.domainUpDown1.Location = new System.Drawing.Point(364, 126);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.ReadOnly = true;
+            this.domainUpDown1.Size = new System.Drawing.Size(46, 20);
+            this.domainUpDown1.TabIndex = 10;
+            this.domainUpDown1.Text = "1";
+            // 
             // txtTavoloAgg
             // 
             this.txtTavoloAgg.Location = new System.Drawing.Point(53, 126);
@@ -222,25 +247,11 @@
             this.txtTavoloAgg.Size = new System.Drawing.Size(100, 20);
             this.txtTavoloAgg.TabIndex = 9;
             // 
-            // txtQtaAgg
-            // 
-            this.txtQtaAgg.Location = new System.Drawing.Point(386, 126);
-            this.txtQtaAgg.Name = "txtQtaAgg";
-            this.txtQtaAgg.Size = new System.Drawing.Size(100, 20);
-            this.txtQtaAgg.TabIndex = 8;
-            // 
-            // txtPiattoAgg
-            // 
-            this.txtPiattoAgg.Location = new System.Drawing.Point(263, 126);
-            this.txtPiattoAgg.Name = "txtPiattoAgg";
-            this.txtPiattoAgg.Size = new System.Drawing.Size(100, 20);
-            this.txtPiattoAgg.TabIndex = 7;
-            // 
             // btnEliminOrdin
             // 
-            this.btnEliminOrdin.Location = new System.Drawing.Point(319, 239);
+            this.btnEliminOrdin.Location = new System.Drawing.Point(311, 235);
             this.btnEliminOrdin.Name = "btnEliminOrdin";
-            this.btnEliminOrdin.Size = new System.Drawing.Size(100, 44);
+            this.btnEliminOrdin.Size = new System.Drawing.Size(99, 44);
             this.btnEliminOrdin.TabIndex = 6;
             this.btnEliminOrdin.Text = "Elimina ordine";
             this.btnEliminOrdin.UseVisualStyleBackColor = true;
@@ -248,37 +259,29 @@
             // 
             // btnAggiorna
             // 
-            this.btnAggiorna.Location = new System.Drawing.Point(334, 177);
+            this.btnAggiorna.Location = new System.Drawing.Point(311, 153);
             this.btnAggiorna.Name = "btnAggiorna";
-            this.btnAggiorna.Size = new System.Drawing.Size(75, 23);
+            this.btnAggiorna.Size = new System.Drawing.Size(99, 23);
             this.btnAggiorna.TabIndex = 5;
             this.btnAggiorna.Text = "Aggiorna";
             this.btnAggiorna.UseVisualStyleBackColor = true;
+            this.btnAggiorna.Click += new System.EventHandler(this.btnAggiorna_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(425, 99);
+            this.label6.Location = new System.Drawing.Point(308, 128);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 13);
+            this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 4;
-            this.label6.Text = "qta";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "piatto";
+            this.label6.Text = "Quantità:";
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(540, 15);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(125, 407);
+            this.listBox2.Size = new System.Drawing.Size(153, 407);
             this.listBox2.TabIndex = 2;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -424,11 +427,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCercaAgg;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TextBox txtTavoloAgg;
-        private System.Windows.Forms.TextBox txtQtaAgg;
-        private System.Windows.Forms.TextBox txtPiattoAgg;
         private System.Windows.Forms.Button btnEliminOrdin;
         private System.Windows.Forms.Button btnAggiorna;
         private System.Windows.Forms.Button button7;
@@ -437,6 +437,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }
 
