@@ -32,6 +32,29 @@ namespace Ristoranti
         int num = 0;
         Piatto[] menu = new Piatto[100];
 
+        private void btnCercaAgg_Click(object sender, EventArgs e)
+        {
+            for (int x = 0; x < num; x++)
+            {
+                if (menu[x].tavolo == int.Parse(txtTavoloAgg.Text))
+                {
+                    listBox1.Items.Clear();
+                    ListViewItem riga;
+                  
+
+                    for (int y = 0; y < num; y++)
+                    {
+                        riga = new ListViewItem(new string[] { menu[x].tavolo.ToString(), menu[x].nome,
+                            menu[x].qta.ToString() });
+
+                        listBox1.Items.Add(riga);
+                    }
+                }
+            }
+
+            
+                MessageBox.Show("Tavolo non trovato");
+        }
     }
 
 }
