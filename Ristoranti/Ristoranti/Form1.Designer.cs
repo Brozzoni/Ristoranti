@@ -42,10 +42,10 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtTavoloAgg = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtQtaAgg = new System.Windows.Forms.TextBox();
+            this.txtPiattoAgg = new System.Windows.Forms.TextBox();
+            this.btnEliminOrdin = new System.Windows.Forms.Button();
+            this.btnAggiorna = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -198,10 +198,10 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.txtTavoloAgg);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.txtQtaAgg);
+            this.tabPage3.Controls.Add(this.txtPiattoAgg);
+            this.tabPage3.Controls.Add(this.btnEliminOrdin);
+            this.tabPage3.Controls.Add(this.btnAggiorna);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.listBox2);
@@ -217,47 +217,47 @@
             // 
             // txtTavoloAgg
             // 
-            this.txtTavoloAgg.Location = new System.Drawing.Point(53, 136);
+            this.txtTavoloAgg.Location = new System.Drawing.Point(53, 126);
             this.txtTavoloAgg.Name = "txtTavoloAgg";
             this.txtTavoloAgg.Size = new System.Drawing.Size(100, 20);
             this.txtTavoloAgg.TabIndex = 9;
             // 
-            // textBox2
+            // txtQtaAgg
             // 
-            this.textBox2.Location = new System.Drawing.Point(386, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtQtaAgg.Location = new System.Drawing.Point(386, 126);
+            this.txtQtaAgg.Name = "txtQtaAgg";
+            this.txtQtaAgg.Size = new System.Drawing.Size(100, 20);
+            this.txtQtaAgg.TabIndex = 8;
             // 
-            // textBox1
+            // txtPiattoAgg
             // 
-            this.textBox1.Location = new System.Drawing.Point(263, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtPiattoAgg.Location = new System.Drawing.Point(263, 126);
+            this.txtPiattoAgg.Name = "txtPiattoAgg";
+            this.txtPiattoAgg.Size = new System.Drawing.Size(100, 20);
+            this.txtPiattoAgg.TabIndex = 7;
             // 
-            // button5
+            // btnEliminOrdin
             // 
-            this.button5.Location = new System.Drawing.Point(386, 239);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 44);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "elimina ordine";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnEliminOrdin.Location = new System.Drawing.Point(319, 239);
+            this.btnEliminOrdin.Name = "btnEliminOrdin";
+            this.btnEliminOrdin.Size = new System.Drawing.Size(100, 44);
+            this.btnEliminOrdin.TabIndex = 6;
+            this.btnEliminOrdin.Text = "Elimina ordine";
+            this.btnEliminOrdin.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnAggiorna
             // 
-            this.button4.Location = new System.Drawing.Point(395, 193);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "aggiorna";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAggiorna.Location = new System.Drawing.Point(334, 177);
+            this.btnAggiorna.Name = "btnAggiorna";
+            this.btnAggiorna.Size = new System.Drawing.Size(75, 23);
+            this.btnAggiorna.TabIndex = 5;
+            this.btnAggiorna.Text = "Aggiorna";
+            this.btnAggiorna.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(432, 99);
+            this.label6.Location = new System.Drawing.Point(425, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 13);
             this.label6.TabIndex = 4;
@@ -279,6 +279,7 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(244, 407);
             this.listBox2.TabIndex = 2;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -291,9 +292,9 @@
             // 
             // btnCercaAgg
             // 
-            this.btnCercaAgg.Location = new System.Drawing.Point(53, 233);
+            this.btnCercaAgg.Location = new System.Drawing.Point(53, 177);
             this.btnCercaAgg.Name = "btnCercaAgg";
-            this.btnCercaAgg.Size = new System.Drawing.Size(112, 50);
+            this.btnCercaAgg.Size = new System.Drawing.Size(100, 50);
             this.btnCercaAgg.TabIndex = 0;
             this.btnCercaAgg.Text = "Cerca";
             this.btnCercaAgg.UseVisualStyleBackColor = true;
@@ -425,10 +426,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TextBox txtTavoloAgg;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtQtaAgg;
+        private System.Windows.Forms.TextBox txtPiattoAgg;
+        private System.Windows.Forms.Button btnEliminOrdin;
+        private System.Windows.Forms.Button btnAggiorna;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button6;

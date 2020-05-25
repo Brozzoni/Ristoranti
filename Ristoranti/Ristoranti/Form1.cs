@@ -22,6 +22,7 @@ namespace Ristoranti
 
             menu[num].nome = "Tartar di tonno";
             menu[num].prez = 12.00M;
+            menu[num].tavolo = 3;
             num++;
 
             menu[num].nome = "Pizza";
@@ -30,30 +31,28 @@ namespace Ristoranti
         }
 
         int num = 0;
+        int b = 0;
         Piatto[] menu = new Piatto[100];
 
         private void btnCercaAgg_Click(object sender, EventArgs e)
         {
-            for (int x = 0; x < num; x++)
+            listBox2.Items.Clear();
+
+            for (b = 0; b < num; b++)
             {
-                if (menu[x].tavolo == int.Parse(txtTavoloAgg.Text))
+                if (menu[b].tavolo == int.Parse(txtTavoloAgg.Text))
                 {
-                    listBox1.Items.Clear();
-                    ListViewItem riga;
-                  
-
-                    for (int y = 0; y < num; y++)
-                    {
-                        riga = new ListViewItem(new string[] { menu[x].tavolo.ToString(), menu[x].nome,
-                            menu[x].qta.ToString() });
-
-                        listBox1.Items.Add(riga);
-                    }
+                    listBox2.Items.Add($"{menu[b].nome} x{menu[b].qta.ToString()}");
                 }
             }
 
-            
-                MessageBox.Show("Tavolo non trovato");
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+            txtQtaAgg.Text = listBox2.SelectedItem.ToString();
+
+            txtQtaAgg.Text.Split();
         }
     }
 
