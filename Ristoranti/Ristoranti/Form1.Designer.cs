@@ -244,6 +244,7 @@
             this.btnEliminOrdin.TabIndex = 6;
             this.btnEliminOrdin.Text = "Elimina ordine";
             this.btnEliminOrdin.UseVisualStyleBackColor = true;
+            this.btnEliminOrdin.Click += new System.EventHandler(this.btnEliminOrdin_Click);
             // 
             // btnAggiorna
             // 
@@ -277,7 +278,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(540, 15);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(244, 407);
+            this.listBox2.Size = new System.Drawing.Size(125, 407);
             this.listBox2.TabIndex = 2;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
