@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,10 @@ namespace Ristoranti
 {
     public partial class Form1 : Form
     {
+
+        int num = 0;
+        Piatto[] menu = new Piatto[100];
+
         public Form1()
         {
             InitializeComponent();
@@ -63,6 +68,93 @@ namespace Ristoranti
         Piatto[] menu = new Piatto[15];
         Piatto[] ordini = new Piatto[100];
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBox4.Text) == true)
+            {
+                MessageBox.Show("inserire il numero di un tavolo");
+                return;
+            }
+
+            bool.TryParse(textBox4.Text, out bool a);
+            if (a == true)
+            {
+                MessageBox.Show("inserire un valore valido");
+                return;
+            }
+                        
+            int i = int.Parse(textBox4.Text);            
+
+            decimal x = default(decimal);
+            for (int b = 0; b <= num; b++)
+            {
+                if (menu[b].tavolo == i)
+                {
+                    x = x + menu[b].prez;
+                }
+            }
+
+            label10.Text = $"{x}";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(label10.Text) == true)
+            {
+                MessageBox.Show("inserire il numero di un tavolo");
+                return;
+            }
+
+            if (File.Exists("SommaGuadagno.txt") != true)
+            {
+                FileInfo fi = new FileInfo("SommaGuadagno.txt");
+            }
+
+            using (StreamWriter scrv = new StreamWriter("SommaGuadagno.txt"))
+            {
+                scrv.WriteLine($"label10.Text");
+            }
+
+            label10.Text = "";
+
+            for (int b = 0; b <= num; b++)
+            {
+                if (menu[b].tavolo == int.Parse(label10.Text))
+                {                    
+                    menu[b] = menu[num - 1];
+                    menu[num - 1] = menu[num];
+                    num = num - 1;
+                }
+            }
+
+            MessageBox.Show("prezzo caricato");
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label10.Text = "";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            using (StreamReader legg = new StreamReader("SommaGuadagno.txt"))
+            {
+                int x = 0;
+                int y = 0;
+                while (legg.EndOfStream != true)
+                {
+                    x = int.Parse(legg.ReadLine());
+                    y = y + x;
+                }
+                label11.Text = $"prezzo totale {y}";
+            }
+        }
+    }
 
         private void button1_Click(object sender, EventArgs e)
         {
