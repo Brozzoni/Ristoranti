@@ -18,3 +18,13 @@ C:\Users\brozz\Desktop\pcto\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristorant
 C:\Users\brozz\Desktop\pcto\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.CoreCompileInputs.cache
 C:\Users\brozz\Desktop\pcto\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.exe
 C:\Users\brozz\Desktop\pcto\Ristoranti\Ristoranti\Ristoranti\obj\Debug\Ristoranti.pdb
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\bin\Debug\Ristoranti.exe.config
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\bin\Debug\Ristoranti.exe
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\bin\Debug\Ristoranti.pdb
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csprojAssemblyReference.cache
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.Form1.resources
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.Properties.Resources.resources
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.GenerateResource.cache
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.csproj.CoreCompileInputs.cache
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.exe
+C:\Users\Gabry & Tommy\Desktop\Ristoranti\Ristoranti\obj\Debug\Ristoranti.pdb
