@@ -36,14 +36,14 @@ namespace Ristoranti
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox4.Text) == true)
+            if (String.IsNullOrEmpty(textBox4.Text) == true)
             {
                 MessageBox.Show("inserire il numero di un tavolo");
                 return;
             }
 
             bool.TryParse(textBox4.Text, out bool a);
-            if (a == false)
+            if (a == true)
             {
                 MessageBox.Show("inserire un valore valido");
                 return;
