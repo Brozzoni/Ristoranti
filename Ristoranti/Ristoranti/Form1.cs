@@ -78,14 +78,14 @@ namespace Ristoranti
 
             using (StreamWriter scrv = new StreamWriter("SommaGuadagno.txt"))
             {
-                scrv.WriteLine($"label10.Text");
+                scrv.WriteLine($"{label10.Text}");
             }
 
             label10.Text = "";
 
             for (int b = 0; b <= num; b++)
             {
-                if (menu[b].tavolo == int.Parse(label10.Text))
+                if (menu[b].tavolo == int.Parse(textBox4.Text))
                 {                    
                     menu[b] = menu[num - 1];
                     menu[num - 1] = menu[num];
