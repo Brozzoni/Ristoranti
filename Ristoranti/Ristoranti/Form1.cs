@@ -18,6 +18,9 @@ namespace Ristoranti
         {
             InitializeComponent();
 
+            menu[0].nome = "Penne al sugo";
+            menu[0].prez = 12.00M;
+
             menu[1].nome = "Vino";
             menu[1].prez = 12.00M;
 
