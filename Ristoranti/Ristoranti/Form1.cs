@@ -164,33 +164,50 @@ namespace Ristoranti
                 return;
             }
 
-            if (string.IsNullOrEmpty(textBox5.Text))
-            {
-                MessageBox.Show("Inserisci un tavolo");
-                return;
-            }
-
-            if (radioButton1.Checked == true)
-                Class1.ordinapiatti(ordini, num);
-
-            if (radioButton2.Checked == true)
-                Class1.ordinitavolo(ordini, num);
+            int x = 0;
 
             ListViewItem riga = default;
             listView1.Items.Clear();
-
-            int x = 0;
-            while (x<num)
+            
+            if (radioButton1.Checked == true)
             {
-                riga = new ListViewItem(new string[]{ ordini[x].nome,
+                Class1.ordinapiatti(ordini, num);
+
+                while (x < num)
+                {
+                    riga = new ListViewItem(new string[]{ ordini[x].nome,
                     ordini[x].prez.ToString(),
                     ordini[x].tavolo.ToString(),
                     ordini[x].tipo });
-                listView1.Items.Add(riga);
+                    listView1.Items.Add(riga);
                     x++;
-            }
-            
+                }
+            } 
 
+            if (radioButton2.Checked == true)
+            {
+                if (string.IsNullOrEmpty(textBox5.Text))
+                {
+                    MessageBox.Show("Inserisci un tavolo");
+                    return;
+                }
+
+                while(x<num)
+                {
+                    if (ordini[x].tavolo == int.Parse(textBox5.Text))
+                    {
+                        riga = new ListViewItem(new string[]{ ordini[x].nome,
+                    ordini[x].prez.ToString(),
+                    ordini[x].tavolo.ToString(),
+                    ordini[x].tipo });
+                        listView1.Items.Add(riga);
+                        
+                    }
+                    x++;
+                }               
+
+                textBox5.Clear();
+            } 
         }
     }
 }
