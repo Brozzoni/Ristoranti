@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnFatturato = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnFatturato = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.txtTavoloAgg = new System.Windows.Forms.TextBox();
@@ -53,6 +55,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -63,26 +66,25 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnPaga = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnScontrino = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.btnScontrino = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tabPage6.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage6
@@ -96,6 +98,33 @@
             this.tabPage6.Size = new System.Drawing.Size(1059, 476);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Fatturato";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnFatturato);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(323, 81);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(451, 314);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Fattura";
+            // 
+            // btnFatturato
+            // 
+            this.btnFatturato.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnFatturato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFatturato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFatturato.Location = new System.Drawing.Point(140, 191);
+            this.btnFatturato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFatturato.Name = "btnFatturato";
+            this.btnFatturato.Size = new System.Drawing.Size(178, 49);
+            this.btnFatturato.TabIndex = 0;
+            this.btnFatturato.Text = "FATTURATO";
+            this.btnFatturato.UseVisualStyleBackColor = true;
+            this.btnFatturato.Click += new System.EventHandler(this.btnFatturato_Click);
             // 
             // label11
             // 
@@ -119,23 +148,11 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "PREZZO";
             // 
-            // btnFatturato
-            // 
-            this.btnFatturato.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnFatturato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFatturato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFatturato.Location = new System.Drawing.Point(140, 191);
-            this.btnFatturato.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnFatturato.Name = "btnFatturato";
-            this.btnFatturato.Size = new System.Drawing.Size(178, 49);
-            this.btnFatturato.TabIndex = 0;
-            this.btnFatturato.Text = "FATTURATO";
-            this.btnFatturato.UseVisualStyleBackColor = true;
-            this.btnFatturato.Click += new System.EventHandler(this.btnFatturato_Click);
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.listBox3);
             this.tabPage3.Controls.Add(this.domainUpDown1);
@@ -154,14 +171,24 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Aggiorna-Elimina";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(376, 328);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 22);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Oppure ";
+            // 
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 17;
-            this.listBox3.Location = new System.Drawing.Point(865, 36);
+            this.listBox3.Location = new System.Drawing.Point(865, 53);
             this.listBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(131, 429);
+            this.listBox3.Size = new System.Drawing.Size(131, 412);
             this.listBox3.TabIndex = 11;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged_1);
             // 
@@ -245,10 +272,10 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 17;
-            this.listBox2.Location = new System.Drawing.Point(726, 36);
+            this.listBox2.Location = new System.Drawing.Point(726, 53);
             this.listBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(131, 429);
+            this.listBox2.Size = new System.Drawing.Size(131, 412);
             this.listBox2.TabIndex = 2;
             // 
             // label4
@@ -427,6 +454,16 @@
             this.tabPage4.TabIndex = 7;
             this.tabPage4.Text = "Visualizza ordini";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(41, 38);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(229, 23);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Scegli un ordinamento";
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(128, 185);
@@ -525,24 +562,18 @@
             this.tabPage5.TabIndex = 6;
             this.tabPage5.Text = "Scontrino-Salva";
             // 
-            // label9
+            // groupBox2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(213, 83);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 23);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "------";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 33);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 32);
-            this.textBox1.TabIndex = 4;
+            this.groupBox2.Controls.Add(this.btnPaga);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(543, 94);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(463, 293);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Pagamento";
             // 
             // btnPaga
             // 
@@ -569,6 +600,29 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "PREZZO";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(213, 83);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 23);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "------";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnScontrino);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(62, 94);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(463, 293);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserisci il numero del tavolo";
+            // 
             // btnScontrino
             // 
             this.btnScontrino.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
@@ -583,6 +637,14 @@
             this.btnScontrino.UseVisualStyleBackColor = true;
             this.btnScontrino.Click += new System.EventHandler(this.btnScontrino_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(41, 33);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(103, 32);
+            this.textBox1.TabIndex = 4;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -594,63 +656,25 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Gestionale Ristoranti";
             // 
-            // label8
+            // label14
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(376, 328);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 22);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Oppure ";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(763, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 21);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "Nome";
             // 
-            // groupBox1
+            // label15
             // 
-            this.groupBox1.Controls.Add(this.btnScontrino);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(62, 94);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(463, 293);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inserisci il numero del tavolo";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnPaga);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(543, 94);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(463, 293);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Pagamento";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnFatturato);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(323, 81);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(451, 314);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Fattura";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(41, 38);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(229, 23);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Scegli un ordinamento";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(883, 27);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 21);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "Quantità";
             // 
             // Form1
             // 
@@ -663,8 +687,11 @@
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gestionale Ristoranti";
+            
             this.tabPage6.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
@@ -673,12 +700,10 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,6 +757,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
     }
 }
 
