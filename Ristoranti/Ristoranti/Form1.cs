@@ -146,20 +146,25 @@ namespace Ristoranti
         {
             int x = 0;
 
-            if (ordini[x].tavolo == int.Parse(txtTavoloAgg.Text))
+            while (x < num)
             {
-                ordini[x].qta = int.Parse(domainUpDown1.Text);
+                if (ordini[x].tavolo == int.Parse(txtTavoloAgg.Text))
+                {
+                    if (ordini[x].nome == listBox2.SelectedItem.ToString())
+                    {
+                        ordini[x].qta = int.Parse(domainUpDown1.Text);
+                    }
+                }
+                x++;
             }
-            
 
-            txtTavoloAgg.Clear();
-            listBox2.Items.Clear();
-            listBox2.Items.Clear();
+            btnCercaAgg.PerformClick();
         }
 
         private void listBox3_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             domainUpDown1.Text = listBox3.SelectedItem.ToString();
         }
+
     }
 }
