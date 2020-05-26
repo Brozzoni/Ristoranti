@@ -130,7 +130,7 @@
             "Fritto misto",
             "Branzino",
             "Cheesecake"});
-            this.listBox1.Location = new System.Drawing.Point(46, 127);
+            this.listBox1.Location = new System.Drawing.Point(45, 128);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(252, 160);
@@ -154,7 +154,6 @@
             this.tbQI.Name = "tbQI";
             this.tbQI.Size = new System.Drawing.Size(76, 20);
             this.tbQI.TabIndex = 5;
-            this.tbQI.Text = "1";
             // 
             // tbTI
             // 
@@ -294,6 +293,14 @@
             // domainUpDown1
             // 
             this.domainUpDown1.Items.Add("1");
+            this.domainUpDown1.Items.Add("2");
+            this.domainUpDown1.Items.Add("3");
+            this.domainUpDown1.Items.Add("4");
+            this.domainUpDown1.Items.Add("5");
+            this.domainUpDown1.Items.Add("6");
+            this.domainUpDown1.Items.Add("7");
+            this.domainUpDown1.Items.Add("8");
+            this.domainUpDown1.Items.Add("9");
             this.domainUpDown1.Items.Add("10");
             this.domainUpDown1.Items.Add("11");
             this.domainUpDown1.Items.Add("12");
@@ -304,21 +311,12 @@
             this.domainUpDown1.Items.Add("17");
             this.domainUpDown1.Items.Add("18");
             this.domainUpDown1.Items.Add("19");
-            this.domainUpDown1.Items.Add("2");
             this.domainUpDown1.Items.Add("20");
-            this.domainUpDown1.Items.Add("3");
-            this.domainUpDown1.Items.Add("4");
-            this.domainUpDown1.Items.Add("5");
-            this.domainUpDown1.Items.Add("6");
-            this.domainUpDown1.Items.Add("7");
-            this.domainUpDown1.Items.Add("8");
-            this.domainUpDown1.Items.Add("9");
             this.domainUpDown1.Location = new System.Drawing.Point(273, 102);
             this.domainUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.ReadOnly = true;
             this.domainUpDown1.Size = new System.Drawing.Size(34, 20);
-            this.domainUpDown1.Sorted = true;
             this.domainUpDown1.TabIndex = 10;
             this.domainUpDown1.Text = "1";
             // 
@@ -346,7 +344,7 @@
             this.btnAggiorna.Location = new System.Drawing.Point(233, 124);
             this.btnAggiorna.Margin = new System.Windows.Forms.Padding(2);
             this.btnAggiorna.Name = "btnAggiorna";
-            this.btnAggiorna.Size = new System.Drawing.Size(74, 25);
+            this.btnAggiorna.Size = new System.Drawing.Size(74, 19);
             this.btnAggiorna.TabIndex = 5;
             this.btnAggiorna.Text = "Aggiorna";
             this.btnAggiorna.UseVisualStyleBackColor = true;

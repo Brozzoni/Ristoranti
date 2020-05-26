@@ -11,8 +11,13 @@ namespace Ristoranti
         public string nome;
         public decimal prez;
         public int qta;
+        public string tipo;
         public int tavolo;
+        public bool stato;
     }
+
+    
+
     class Class1
     {
        
