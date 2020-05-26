@@ -67,6 +67,12 @@ namespace Ristoranti
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox4.Text))
+            {
+                MessageBox.Show("Selezionare un piatto");
+                return;
+            }
+
             if (string.IsNullOrEmpty(tbTI.Text))
             {
                 MessageBox.Show("Inserire un tavolo");
@@ -95,6 +101,12 @@ namespace Ristoranti
             ordini[num].tavolo = int.Parse(tbTI.Text);
 
             num++;
+
+            tbTI.Clear();
+            tbQI.Clear();
+            textBox4.Clear();
+
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -158,6 +170,26 @@ namespace Ristoranti
                 return;
             }
 
+            if (radioButton1.Checked == true)
+                Class1.ordinapiatti(ordini, num);
+
+            if (radioButton2.Checked == true)
+                Class1.ordinitavolo(ordini, num);
+
+            ListViewItem riga = default;
+            listView1.Items.Clear();
+
+            int x = 0;
+            while (x<num)
+            {
+                riga = new ListViewItem(new string[]{ ordini[x].nome,
+                    ordini[x].prez.ToString(),
+                    ordini[x].tavolo.ToString(),
+                    ordini[x].tipo });
+                listView1.Items.Add(riga);
+                    x++;
+            }
+            
 
         }
     }
