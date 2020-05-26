@@ -105,6 +105,21 @@ namespace Ristoranti
         {
             label10.Text = "";
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            using (StreamReader legg = new StreamReader("SommaGuadagno.txt"))
+            {
+                int x = 0;
+                int y = 0;
+                while (legg.EndOfStream != true)
+                {
+                    x = int.Parse(legg.ReadLine());
+                    y = y + x;
+                }
+                label11.Text = $"prezzo totale {y}";
+            }
+        }
     }
 
 }

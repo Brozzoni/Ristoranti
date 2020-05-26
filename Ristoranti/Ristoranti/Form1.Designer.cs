@@ -61,6 +61,7 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -373,6 +374,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label11);
             this.tabPage5.Controls.Add(this.label9);
             this.tabPage5.Controls.Add(this.button8);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -400,6 +402,16 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "FATTRATO";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(408, 85);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "label11";
             // 
             // Form1
             // 
@@ -460,6 +472,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
